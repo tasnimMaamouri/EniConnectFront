@@ -1,0 +1,44 @@
+mat-card h2 {
+    text-align: center;
+  }
+.mat-form-field {
+    font-size: 1.8ch;
+    
+    width: 100%;
+}
+.buttonSubmit {
+    width: 100%;
+
+    background-color: var(--Cerulean-Blue);
+    color:var(--White);
+    text-align: center 
+}
+ 
+.buttonsLogin{
+   
+    display: flex;
+}
+.container{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+.col1{
+  width:80vw;
+  margin-left:10ch ;
+  margin-top: 100px;
+}
+.col2{
+  width:30vw;
+  margin-right: 10ch;
+  margin-top: 60px;
+}
+
+html { 
+ background-color: #EBEBEB;
+}
+a{
+  cursor: pointer;
+
+}

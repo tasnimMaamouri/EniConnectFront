@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+
+}
+:root {
+  --Cerulean-Blue: #2957C8;
+  --White: #FFFFFF;
+  --Light-Carmine-Pink: #ED5E63;
+  --Shadow-Blue: #818DA1;
+  --Pale-Cornflower-Blue: #B2C3EB ;
+  --Han-Blue: #4D73D0;
+  --Light-Slate-Gray:#6F829B;
+  --Light-Periwinkle:#C4CEE1;
+  --Davy-Grey: #4D515F;
+  --success:#4CAF50;
+  --danger:#FF5252;
+  --warning:#FFC107;
+}
+.danger {
+  background: var(--danger);
+}
+.success{
+  background: var(--success);
+}
+.warning{
+  background: var(--warning);
+}

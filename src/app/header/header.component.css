@@ -1,0 +1,29 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  mat-icon {
+    color: var(--White);
+    font-size: 2.5ch;
+  }
+  
+  mat-toolbar {
+    max-height: 4.5ch;
+    min-height: 4.5ch;
+    background-color: var(--Cerulean-Blue);
+  }
+  
+  .mat-divider {
+    border: var(--White);
+    opacity: 20%;
+  }
+  
+  .exit-icon {
+    margin-right: 2ch;
+    margin-left: 1ch;
+  }
+  
+  .iconsHeader {
+    margin-right: 1ch;
+    margin-left: 1ch;
+  }

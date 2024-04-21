@@ -1,0 +1,31 @@
+.buttons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.buttonClose{
+    background-color: var(--Han-Blue);
+    color:var(--White);
+    text-align: center;
+    margin-right :10px; 
+
+}
+.buttonClose:hover{
+    background-color: var(--Cerulean-Blue);
+
+}
+.buttonSubmit{
+    background-color: var(--Han-Blue);
+    color:var(--White);
+    text-align: center;
+
+}
+.buttonSubmit:hover{
+    background-color: var(--Cerulean-Blue);
+
+}
+.mat-form-field {
+    font-size: 1.8ch;
+    width: 100%;
+  }

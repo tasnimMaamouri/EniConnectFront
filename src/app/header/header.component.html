@@ -1,0 +1,23 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <button mat-icon-button>
+            <mat-icon (click)="toggleSideBar()">menu</mat-icon>
+        </button>
+        <span class="example-spacer"></span>
+        <mat-divider *ngIf="type=='medecin'" vertical style="height:100%"></mat-divider>
+        
+        <button *ngIf="type=='medecin'" mat-icon-button class="iconsHeader" (click)="ajouterSecretaire()"  matTooltip="Ajouter Secretaire">
+           <mat-icon>add_circle_outline</mat-icon>
+        </button>
+        
+        <mat-divider *ngIf="type=='medecin'" vertical style="height:100%"></mat-divider>
+        <button *ngIf="type=='medecin'" routerLink="compte" mat-icon-button class="iconsHeader" matTooltip="Compte" >
+            <mat-icon>perm_identity</mat-icon>
+        </button>
+              
+        <mat-divider vertical style="height:100%"></mat-divider>
+        <button mat-icon-button class="exit-icon" (click)="logout()" matTooltip="Se déconnecter">
+            <mat-icon>exit_to_app</mat-icon>
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>
