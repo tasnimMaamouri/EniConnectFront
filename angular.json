@@ -104,5 +104,8 @@
       }
     }
   },
-  "defaultProject": "EniConnectFront"
+  "defaultProject": "EniConnectFront",
+  "cli": {
+    "analytics": "6374828b-e29d-474f-965b-c97a06763396"
+  }
 }
