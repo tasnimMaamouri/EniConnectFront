@@ -1,0 +1,44 @@
+<mat-card *ngFor="let article of articles" class="article-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image">
+            <img src="/./assets/images/avater.png" alt="Avatar" class="avatar-image">
+          </div>      <mat-card-title>{{ article.title }}</mat-card-title>
+      <mat-card-subtitle>{{ article.id }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ article.content }}</p>
+      <div class="video-container">
+        <!-- Static image of the video -->
+        <img src="/./assets/images/video.jpeg" alt="Video Thumbnail" class="video-thumbnail">
+        <!-- Link to watch the video on YouTube -->
+        <a href="{{ article.videoUrl }}" target="_blank" class="watch-video-link"><mat-icon>play_circle_outline</mat-icon></a>
+      </div>
+    </mat-card-content>
+    <!-- Footer section -->
+    <mat-card-footer>
+      <div class="author-info">
+        <span class="author-name">auteur: {{ article.ancienEtudiant.nomPrenom }}</span>
+      </div>
+    </mat-card-footer>
+  </mat-card>
+  <div *ngIf="!testArticle">
+   
+      
+    <div style="text-align: center;">
+      <img src="assets\images\data-not-found-1965034 (4).png" alt="aucune Article trouvée">
+  
+    </div>
+    <div style="text-align: center;">
+      <pre style="font-size: 20px;">aucun Article trouvé! 
+      vous pouvez ajouter un nouvel Article!
+      <span style="color: #b73232;">Soyez le premier à poster un article</span>
+      </pre>
+    </div>
+    <div style="text-align: center;" class="buttonDajout">
+      <button  mat-raised-button (click)="ajouterArticle()" class="demo-button">
+          Ajouter Article
+         </button>
+  </div>
+
+</div>
+  

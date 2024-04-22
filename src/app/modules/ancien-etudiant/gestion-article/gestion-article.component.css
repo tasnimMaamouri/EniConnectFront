@@ -1,0 +1,25 @@
+table{
+    width: 100%;
+}
+.pointer{
+    cursor: pointer;
+}
+.buttonDajout{
+    margin-bottom:16px ;
+margin-left: auto;
+}
+.buttonDajout button{
+    background-color:var(--Cerulean-Blue);
+    color: var(--White);
+   
+}
+.buttonDajout button:hover{
+    background-color: var(--Light-Carmine-Pink);
+    color: var(--White);
+}
+.mat-header-cell {
+    color: black;
+}
+.mat-cell{
+    color: rgb(116, 116, 116);
+}

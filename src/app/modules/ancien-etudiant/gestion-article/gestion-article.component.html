@@ -1,0 +1,68 @@
+
+<div [hidden]="!testArticle" class="table-container">
+    <div style="display: flex;">
+        <div style="width: 100%;">
+            <mat-form-field appearance="outline" style="font-size: 60%; width: 50%;margin-left: 3%;">
+                <mat-label style="font-size: 13px;">Rechercher</mat-label>
+                <input matInput (keyup)="applyFilterArticle($event)" placeholder="Rechercher" #input style="font-size: 13px; " />
+              </mat-form-field>
+        </div>
+        <div class="buttonDajout">
+            <button  mat-raised-button (click)="ajouterArticle()" class="demo-button">
+                Nouvelle Article
+               </button>
+        </div>
+    </div>
+   
+
+    <table mat-table [dataSource]="dataSourceArticle" class="mat-elevation-z8">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef>TITLE</th>
+        <td mat-cell *matCellDef="let element">{{ element.title }}</td>
+      </ng-container>
+  
+      
+
+      
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>ACTIONS</th>
+        <td mat-cell *matCellDef="let element">
+          <a (click)="modifierArticle(element.id)" class="pointer" matTooltip="Modifier Article">
+            <mat-icon style="font-size: 19px;color: var(--Han-Blue)">edit</mat-icon>
+          </a>
+          <a (click)=deleteArticle(element.id) class="pointer" matTooltip="Supprimer Article">
+            <mat-icon style="color: red; font-size: 19px;">delete</mat-icon>
+          </a>
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+
+    <mat-paginator [length]="resultsLengthArticle" [pageSize]=10 showFirstLastButtons aria-label="Select page ">
+    </mat-paginator>
+  </div>
+  <div *ngIf="!testArticle">
+   
+      
+      <div style="text-align: center;">
+        <img src="assets\images\data-not-found-1965034 (4).png" alt="aucune Article trouvée">
+    
+      </div>
+      <div style="text-align: center;">
+  <pre style="font-size: 20px;">  aucun Article trouvée! 
+vous pouvez ajouter un nouvel Article!
+          
+          </pre></div>
+      <div style="text-align: center;" class="buttonDajout">
+        <button  mat-raised-button (click)="ajouterArticle()" class="demo-button">
+            Nouvel Article
+           </button>
+    </div>
+ 
+  </div>

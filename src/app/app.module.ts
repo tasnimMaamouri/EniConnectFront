@@ -44,6 +44,10 @@ import { AgendaAncienEtudiantComponent } from './modules/ancien-etudiant/agenda-
 import { SidebarAncienEtudiantComponent } from './modules/ancien-etudiant/sidebar-ancien-etudiant/sidebar-ancien-etudiant.component';
 import { AgendaNouveauEtudiantComponent } from './modules/nouveau-etudiant/agenda-nouveau-etudiant/agenda-nouveau-etudiant.component';
 import { SidebarNouveauEtudiantComponent } from './modules/nouveau-etudiant/sidebar-nouveau-etudiant/sidebar-nouveau-etudiant.component';
+import { GestionArticleComponent } from './modules/ancien-etudiant/gestion-article/gestion-article.component';
+import { AccueilArticleComponent } from './modules/ancien-etudiant/accueil-article/accueil-article.component';
+import { DialogAddArticleComponent } from './modules/ancien-etudiant/dialog-add-article/dialog-add-article.component';
+import { DialogUpdateArticleComponent } from './modules/ancien-etudiant/dialog-update-article/dialog-update-article.component';
 
 
 @NgModule({
@@ -62,6 +66,10 @@ import { SidebarNouveauEtudiantComponent } from './modules/nouveau-etudiant/side
     AgendaNouveauEtudiantComponent,
     SidebarNouveauEtudiantComponent,
     PageNotFoundComponent,
+    GestionArticleComponent,
+    AccueilArticleComponent,
+    DialogAddArticleComponent,
+    DialogUpdateArticleComponent
   ],
   imports: [
     BrowserModule,
@@ -91,6 +99,7 @@ import { SidebarNouveauEtudiantComponent } from './modules/nouveau-etudiant/side
     MatSortModule,
     MatFormFieldModule,
     MatSnackBarModule,
+    
 
   ],
   providers: [],

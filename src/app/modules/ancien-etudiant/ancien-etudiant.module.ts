@@ -23,6 +23,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { DialogRefreshMotDePasseComponent } from '../dialog-refresh-mot-de-passe/dialog-refresh-mot-de-passe.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SidebarAncienEtudiantComponent } from './sidebar-ancien-etudiant/sidebar-ancien-etudiant.component';
+import { GestionArticleComponent } from './gestion-article/gestion-article.component';
+import { DialogAddArticleComponent } from './dialog-add-article/dialog-add-article.component';
+import { DialogUpdateArticleComponent } from './dialog-update-article/dialog-update-article.component';
+import { AccueilArticleComponent } from './accueil-article/accueil-article.component';
 
 
 
@@ -30,7 +34,11 @@ import { SidebarAncienEtudiantComponent } from './sidebar-ancien-etudiant/sideba
 @NgModule({
   declarations: [
     AgendaAncienEtudiantComponent,
-    SidebarAncienEtudiantComponent
+    SidebarAncienEtudiantComponent,
+    GestionArticleComponent,
+    DialogAddArticleComponent,
+    DialogUpdateArticleComponent,
+    AccueilArticleComponent
   ],
   imports: [
     CommonModule,
@@ -51,7 +59,8 @@ import { SidebarAncienEtudiantComponent } from './sidebar-ancien-etudiant/sideba
     MatGridListModule,
     MatSortModule,
     MatFormFieldModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    
   ]
 })
 export class AncienEtudiantModule { }

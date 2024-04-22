@@ -1,0 +1,32 @@
+<mat-card class=" cardUpArticle mat-elevation-z8">
+    <h2>Modifier Article</h2>
+    <form [formGroup]="articleForm">
+      
+      <mat-form-field appearance="outline">
+        <mat-label> Title </mat-label>
+        <input matInput placeholder="title" formControlName="title" [(ngModel)]=data.article.title required />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label> Content </mat-label>
+        <textarea matInput  required 
+          placeholder="content" formControlName="content" [(ngModel)]=data.article.content></textarea>
+      
+      </mat-form-field>
+
+     
+
+      <mat-form-field appearance="outline">
+        <mat-label> videoUrl </mat-label>
+        <input  [(ngModel)]=data.article.videoUrl matInput required
+          placeholder="videoUrl" formControlName="videoUrl">
+      </mat-form-field>
+      
+      <div>
+        <button class="buttonSubmit" [disabled]=!articleForm.valid mat-raised-button 
+          (click)="onSubmitArticle()" [mat-dialog-close]="close">
+          valider
+        </button>
+      </div>
+    </form>
+   
+  </mat-card>

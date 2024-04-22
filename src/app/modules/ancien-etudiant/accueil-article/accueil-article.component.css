@@ -1,0 +1,94 @@
+.example-header-image {
+    width: 50px; /* Set the width of the avatar image */
+    height: 50px; /* Set the height of the avatar image */
+   
+    margin-right: 10px; /* Add margin to separate the avatar from the title */
+  }
+  .avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio while covering the entire space */
+  }
+  
+  .article-card {
+    margin-bottom: 50px;
+    width: 500px; /* Set the width of the article card */
+  margin: 0 auto 20px; /* Center the article card horizontally */
+  background-color: #f9f9f9; /* Optional: Set a background color for the article card */
+  padding: 20px; /* Optional: Add some padding around the article content */
+  border-radius: 10px; /* Optional: Add border radius for a rounded appearance */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for depth */
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  }
+  
+  .video-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .watch-video-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #b73232;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    height: 40px; /* Set a fixed height to center vertically */
+    width: 40px;
+  }
+  
+  /* Increase the font size of the mat-icon */
+  .watch-video-link mat-icon {
+    font-size: 40px; /* Adjust the font size as needed */
+  }
+  
+  .watch-video-link:hover {
+    background-color: #dc3131;
+    color: #fff;
+  }
+  
+.pointer{
+    cursor: pointer;
+}
+.buttonDajout{
+    margin-bottom:16px ;
+margin-left: auto;
+}
+.buttonDajout button{
+    background-color:var(--Cerulean-Blue);
+    color: var(--White);
+   
+}
+.buttonDajout button:hover{
+    background-color: var(--Light-Carmine-Pink);
+    color: var(--White);
+}
+/* Position the footer at the bottom of the card */
+.mat-card-footer {
+  position: relative; /* Change position to relative */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: flex-end; /* Align content to the end (right side) */
+  padding: 8px; /* Adjust padding as needed */
+}
+
+/* Style the author info */
+.author-info {
+  font-weight: bold; /* Make the author name bold */
+}
+
+.author-name {
+  color: #4D73D0; /* Adjust color as needed */
+}

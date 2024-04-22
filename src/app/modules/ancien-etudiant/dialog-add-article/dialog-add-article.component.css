@@ -1,0 +1,17 @@
+
+.mat-form-field {
+    font-size: 1.8ch;
+    width: 100%;
+  }
+  mat-card {
+    width: 40ch;
+    
+  }
+  mat-card h2 {
+    text-align: center;
+  }
+  .buttonSubmit {
+    margin-left: 30ch;
+    background-color: var(--Cerulean-Blue);
+    color:var(--White);
+  }

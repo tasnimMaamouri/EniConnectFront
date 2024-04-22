@@ -1,0 +1,39 @@
+<mat-card class=" cardArticle mat-elevation-z8">
+    <h2>Nouveau Article</h2>
+    <form [formGroup]="articleForm">
+      
+      
+      
+     
+      <mat-form-field appearance="outline">
+        <mat-label> Title </mat-label>
+        <input matInput placeholder="Title" formControlName="title" required />
+     
+      <mat-error *ngIf="myError('title', 'required')"> entrez title pour l'article!</mat-error> 
+      </mat-form-field>
+      
+
+      <mat-form-field appearance="outline">
+        <mat-label>Content</mat-label>
+        <!-- Replace input with textarea -->
+        <textarea matInput placeholder="Content" formControlName="content" required></textarea>
+        <!-- Use mat-error for error message -->
+        <mat-error *ngIf="myError('content', 'required')">Entrez le contenu de l'article !</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label> VideoUrl </mat-label>
+        <input matInput placeholder="VideoUrl" formControlName="videoUrl" required />
+     
+      <mat-error *ngIf="myError('videoUrl', 'required')"> entrez videoUrl pour l'article!</mat-error> 
+      </mat-form-field>
+     
+      <div>
+        <button class="buttonSubmit" [disabled]=!articleForm.valid mat-raised-button 
+          (click)="onSubmitArticle()" [mat-dialog-close]=close>
+          valider
+        </button>
+      </div>
+    </form>
+   
+  </mat-card>
