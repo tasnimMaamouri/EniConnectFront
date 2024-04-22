@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -37,7 +37,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PageNouveauEtudiantComponent } from './page-nouveau-etudiant/page-nouveau-etudiant.component';
 import { SidebarAdminComponent } from './modules/admin/sidebar-admin/sidebar-admin.component';
 import { AgendaAdminComponent } from './modules/admin/agenda-admin/agenda-admin.component';
 import { AgendaAncienEtudiantComponent } from './modules/ancien-etudiant/agenda-ancien-etudiant/agenda-ancien-etudiant.component';
@@ -61,7 +61,7 @@ import { SidebarNouveauEtudiantComponent } from './modules/nouveau-etudiant/side
     SidebarAncienEtudiantComponent,
     AgendaNouveauEtudiantComponent,
     SidebarNouveauEtudiantComponent,
-    PageNotFoundComponent,
+    PageNouveauEtudiantComponent,
   ],
   imports: [
     BrowserModule,
@@ -91,6 +91,7 @@ import { SidebarNouveauEtudiantComponent } from './modules/nouveau-etudiant/side
     MatSortModule,
     MatFormFieldModule,
     MatSnackBarModule,
+    FormsModule
 
   ],
   providers: [],
