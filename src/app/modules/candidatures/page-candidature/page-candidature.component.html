@@ -1,0 +1,24 @@
+<form>
+  <div class="form-title">
+    <h2>Ajouter une candidature à notre plateforme</h2>
+  </div>
+  <div class="form-group">
+    <label for="idInput">Id de l'étudiant</label>
+    <input type="id" id="idInput" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="dateInput">Date de soumission</label>
+    <input type="date" id="dateInput" class="form-control">
+  </div>
+  <div class="form-group">
+    <mat-form-field>
+      <mat-label>Définir l'état</mat-label>
+      <mat-select>
+        <mat-option value="one">En attente</mat-option>
+        <mat-option value="two">Acceptée</mat-option>
+        <mat-option value="two">Refusée</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <button type="submit">Ajouter</button>
+</form>

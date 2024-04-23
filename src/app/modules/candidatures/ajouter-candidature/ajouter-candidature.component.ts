@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class AjouterCandidatureComponent implements OnInit {
 
   constructor() { }
+  etatsDisponibles: string[] = ['En attente', 'Acceptée', 'Refusée'];
+
 
   ngOnInit(): void {
   }
