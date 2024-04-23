@@ -22,12 +22,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { DialogRefreshMotDePasseComponent } from '../dialog-refresh-mot-de-passe/dialog-refresh-mot-de-passe.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SidebarNouveauEtudiantComponent } from './sidebar-nouveau-etudiant/sidebar-nouveau-etudiant.component';
+import { PageNouveauEtudiantComponent } from './page-nouveau-etudiant/page-nouveau-etudiant.component';
 
 
 @NgModule({
   declarations: [
     AgendaNouveauEtudiantComponent,
-    SidebarNouveauEtudiantComponent
+    SidebarNouveauEtudiantComponent,
+    PageNouveauEtudiantComponent
   ],
   imports: [
     CommonModule,

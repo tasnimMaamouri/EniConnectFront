@@ -36,14 +36,17 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-
-import { PageNouveauEtudiantComponent } from './page-nouveau-etudiant/page-nouveau-etudiant.component';
+import { PageNouveauEtudiantComponent } from './modules/nouveau-etudiant/page-nouveau-etudiant/page-nouveau-etudiant.component';
 import { SidebarAdminComponent } from './modules/admin/sidebar-admin/sidebar-admin.component';
 import { AgendaAdminComponent } from './modules/admin/agenda-admin/agenda-admin.component';
 import { AgendaAncienEtudiantComponent } from './modules/ancien-etudiant/agenda-ancien-etudiant/agenda-ancien-etudiant.component';
 import { SidebarAncienEtudiantComponent } from './modules/ancien-etudiant/sidebar-ancien-etudiant/sidebar-ancien-etudiant.component';
 import { AgendaNouveauEtudiantComponent } from './modules/nouveau-etudiant/agenda-nouveau-etudiant/agenda-nouveau-etudiant.component';
 import { SidebarNouveauEtudiantComponent } from './modules/nouveau-etudiant/sidebar-nouveau-etudiant/sidebar-nouveau-etudiant.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CandidaturesComponent } from './modules/candidatures/candidatures.component';
+import { AjouterCandidatureComponent } from './modules/candidatures/ajouter-candidature/ajouter-candidature.component';
+import { PageCandidatureComponent } from './modules/candidatures/page-candidature/page-candidature.component';
 
 
 @NgModule({
@@ -62,6 +65,10 @@ import { SidebarNouveauEtudiantComponent } from './modules/nouveau-etudiant/side
     AgendaNouveauEtudiantComponent,
     SidebarNouveauEtudiantComponent,
     PageNouveauEtudiantComponent,
+    PageNotFoundComponent,
+    CandidaturesComponent,
+    AjouterCandidatureComponent,
+    PageCandidatureComponent,
   ],
   imports: [
     BrowserModule,
